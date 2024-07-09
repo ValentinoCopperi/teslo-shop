@@ -1,4 +1,4 @@
-
+"use client"
 import { createUserWithEmailAndPassword, onAuthStateChanged, signInWithEmailAndPassword } from "firebase/auth";
 import {auth} from '../firebase/firebase'
 import { createContext, useContext, useEffect, useState } from "react";
@@ -14,7 +14,6 @@ export default function AuthContextProvider ({children}){
         .then((userCredential) => {
             const user = userCredential.user.email
             setWarning('Account has been created ' + user)
-            window.location.reload()
         })
         .catch((err) => {
             setWarning(err.message)
@@ -28,7 +27,6 @@ export default function AuthContextProvider ({children}){
         .then((userCredential) => {
             const user = userCredential.user.email
             setWarning('Login success ' + user)
-            window.location.reload()
         })
         .catch((err) => {
             setWarning(err.message)

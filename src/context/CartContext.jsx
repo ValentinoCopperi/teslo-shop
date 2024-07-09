@@ -1,4 +1,4 @@
-
+"use client"
 
 import { useContext,createContext, useState } from "react"
 import { getCartFromStorage } from './../services/cart-service';
@@ -22,13 +22,13 @@ export default function CartContextProvider ({children}){
             producto : prod,
             cantidad : cant
         }]
-        window.localStorage.setItem('cart',JSON.stringify(newCart))
+        localStorage.setItem('cart',JSON.stringify(newCart))
     }
 
     const deleteAllProducts = (item) => {
         const newCart = cart.filter(prod => prod.producto.slug != item.producto.slug)
         setCart(newCart)
-        window.localStorage.setItem('cart',JSON.stringify(newCart))
+        localStorage.setItem('cart',JSON.stringify(newCart))
     }
 
     const deleteOneProduct = (item) => {
@@ -47,7 +47,7 @@ export default function CartContextProvider ({children}){
             }
         }
         setCart(updatedCart)
-        window.localStorage.setItem('cart',JSON.stringify(updatedCart))
+       localStorage.setItem('cart',JSON.stringify(updatedCart))
         
     }
    
