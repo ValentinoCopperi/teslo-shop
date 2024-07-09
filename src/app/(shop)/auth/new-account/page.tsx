@@ -1,6 +1,6 @@
 import Register from "@/components/auth/Register";
 
-export default function() {
+export default function Page() {
 
 
 
@@ -10,3 +10,4 @@ export default function() {
     </div>
   );
 }
+

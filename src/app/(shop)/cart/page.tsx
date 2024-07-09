@@ -13,7 +13,7 @@ const carte = [
   initialData.products[0],
   initialData.products[1]
 ]
-export default function () {
+export default function Page () {
 
   const { user } = useAuthContext()
   const { cart, deleteAllProducts ,deleteOneProduct } = useCartContext()
