@@ -4,6 +4,7 @@ import { inter } from "@/config/fonts";
 import "./globals.css";
 import AuthContextProvider, { useAuthContext } from "@/context/AuthContext.jsx";
 import CartContextProvider from './../context/CartContext';
+
 export const metadata: Metadata = {
   title: "Teslo Shop",
   description: "Teslo shop by Valentino Copperi",
