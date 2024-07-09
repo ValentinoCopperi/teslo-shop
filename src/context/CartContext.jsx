@@ -1,4 +1,4 @@
-"use client"
+
 
 import { useContext,createContext, useState } from "react"
 import { getCartFromStorage } from './../services/cart-service';
