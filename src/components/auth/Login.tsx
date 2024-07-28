@@ -5,7 +5,7 @@ import { useAuthContext } from "@/context/AuthContext"
 import Link from "next/link"
 import { useForm } from "react-hook-form"
 
-export default function Login() {
+export const  Login =() => {
 
     const { authLogin, warning } = useAuthContext()
 

@@ -7,8 +7,8 @@ export * from './ui/filters/SearchFilter'
 export * from './ui/filters/MaxValue'
 export * from './ui/filters/SortPrice'
 
-export * from './auth/Login'
-export * from './auth/Register'
+export {Login} from './auth/Login'
+export {Register} from './auth/Register'
 
 export * from './home/HomeBanner'
 export * from './home/HomeCategorySection'

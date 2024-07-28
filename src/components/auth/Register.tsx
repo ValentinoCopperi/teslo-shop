@@ -5,7 +5,7 @@ import Link from "next/link";
 import { FormEvent, useEffect, useRef } from "react";
 import { useForm } from 'react-hook-form';
 
-export default function Register() {
+export const Register =() => {
     const { warning, authRegister } = useAuthContext();
 
     const {
